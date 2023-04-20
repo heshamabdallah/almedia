@@ -17,7 +17,7 @@ export class OffersService {
   private readonly logger = new Logger(OffersService.name)
 
   create(createOfferDto: CreateOfferDto) {
-    return this.offersRepository.create(createOfferDto)
+    return this.offersRepository.save(createOfferDto)
   }
 
   findAll() {
